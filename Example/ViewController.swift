@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     let viewControllers = (0...10).map { IndexViewController(index: $0) }
     let pagingViewController = FixedPagingViewController(viewControllers: viewControllers)
+	pagingViewController.selectedScrollPosition = .leftWithPadding(24)
     
     // Make sure you add the PagingViewController as a child view
     // controller and constrain it to the edges of the view.

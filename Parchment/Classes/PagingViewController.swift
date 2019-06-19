@@ -891,12 +891,12 @@ open class PagingViewController<T: PagingItem>:
   
   private func selectCollectionViewItem(for pagingItem: T, animated: Bool = false) {
     let indexPath = visibleItems.indexPath(for: pagingItem)
-    let scrollPosition = options.scrollPosition
+    //let scrollPosition = options.scrollPosition
     
     collectionView.selectItem(
       at: indexPath,
       animated: animated,
-      scrollPosition: scrollPosition)
+      scrollPosition: [])
   }
   
   private func updateContentOffset() {

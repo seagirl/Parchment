@@ -28,9 +28,9 @@ public class PagingOptions {
   #if swift(>=4.2)
   public var scrollPosition: UICollectionView.ScrollPosition {
     switch selectedScrollPosition {
-    case .left:
+    case .left, .leftWithPadding(_):
       return UICollectionView.ScrollPosition.left
-    case .right:
+    case .right, .rightWithPadding(_):
       return UICollectionView.ScrollPosition.right
     case .preferCentered, .center:
       return UICollectionView.ScrollPosition.centeredHorizontally
@@ -39,9 +39,9 @@ public class PagingOptions {
   #else
   public var scrollPosition: UICollectionViewScrollPosition {
     switch selectedScrollPosition {
-    case .left:
+    case .left, .leftWithPadding(_):
       return UICollectionViewScrollPosition.left
-    case .right:
+    case .right, .rightWithPadding(_):
       return UICollectionViewScrollPosition.right
     case .preferCentered, .center:
       return UICollectionViewScrollPosition.centeredHorizontally

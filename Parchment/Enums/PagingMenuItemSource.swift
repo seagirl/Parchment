@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 public enum PagingMenuItemSource {
 	case `class`(type: PagingCell.Type)

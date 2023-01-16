@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 class IndexedPagingDataSource<T: PagingItem>:
   PagingViewControllerInfiniteDataSource where T: Hashable & Comparable {
